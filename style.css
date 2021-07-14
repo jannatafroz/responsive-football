@@ -4,14 +4,24 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 /* --------------------------------------banner part----------------------------------------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .container{
-    width: 100%;
-    background-color:#2D25A0;
+    background-color: #2D25A0;
+    
     height: 677px;
+    padding: 33px 30px 42px 30px;
+ 
+   
 }
 .banner-part{
+   
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  
 }
 .banner-text h1{
     margin: 0;
@@ -46,6 +56,7 @@ body{
     transform: matrix(-1, 0, 0, 1, 0, 0);
     transition: linear .3s;
 }
+
 
 /* -----------------------------------player part--------------------------------------------------------- */
 .players{
@@ -209,27 +220,24 @@ footer p{
 /*-------------------------------------------------------- media queri----------------------------------- */
 
 @media only screen and (max-width:688px) {
+                
                 .container{
-                width: 100%;
-                height: 100%;
+       
+                    width: 100%;
+                    height: 100%;
                 }
-                .container-p{
-                        width: 100%;
-                    
-                    }
-                .banner-part, .players, .blogs, .final-match, .partners{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-        
+                .banner-part{
+                 grid-template-columns: repeat(1, 1fr);
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+                }
+                .banner-text, .banner-img{
+                    flex-direction: column;
                 }
                 .banner-text h1{
                     padding-top: 30px;
                     padding-left: 0;
-                }
-                .banner-button {
-                    margin-left: 0;
                 }
                 .banner-img img{
                     position: static;
@@ -238,23 +246,67 @@ footer p{
                     flex-direction: column;
                     align-items: center;
                 }
-                .blog{
+                .banner-text h1{
+                    padding-top: 30px;
+                    padding-left: 0;
+                }
+                .banner-button {
+                    margin-left: 0;
+                }
+                .banner-part, .players, .partners {
+                    display: flex;
                     flex-direction: column;
+                    justify-content: center;
                     align-items: center;
-                }
-                .blog-info{
-                    text-align: center;
-                }
+                   padding-left: 60px;
+                   padding-right: 0;
             
-            footer{
-                text-align: center;
-                padding-left: 0;
-                padding-right: 0;
+                    }
+                    .blogs{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding-right: 70px;
+                    }
+                    .final-match{
+                        display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                 
-            }
-            .footer-img img{
-                width: 100%;
-            }
+                    }
+                    .section-title {
+                        text-align: center;
+                        color: #2D25A0;
+                        font-size: 22px;
+                    }
+                    .final-container{
+                        padding-left: 60px;
+                    }
+                   
+                  
+                    .footer-img img{
+                        width: 100%;
+                    }
+                        .blog{
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .blog-info{
+                            text-align: center;
+                        }
+                        .final-match img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        footer{
+                            text-align: center;
+                           padding-left: 40px;
+                            padding-right: 0;
+                        }             
+            
+           
         
    
 }
