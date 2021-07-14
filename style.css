@@ -267,7 +267,7 @@ footer p{
                     align-items: center;
                      }
                      .players{
-                         grid-column-gap: 0;
+                         grid-column-gap: 0%;
                      }
                     .blogs{
                         display: flex;
