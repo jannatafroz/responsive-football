@@ -209,7 +209,7 @@ footer p{
 /*-------------------------------------------------------- media queri----------------------------------- */
 
 @media only screen and (max-width:688px) {
-                .container{
+                .container, .container-p, .top-blogs, .final-container, .top-partner, footer{
                 width: 688px;
                 height: 100%;
                 }
