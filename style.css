@@ -274,7 +274,7 @@ footer p{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        padding-right: 70px;
+                       
                     }
                     .final-match{
                         display: flex;
@@ -288,9 +288,9 @@ footer p{
                         color: #2D25A0;
                         font-size: 22px;
                     }
-                    .final-container{
+                    /* .final-container{
                         padding-left: 60px;
-                    }
+                    } */
                    
                   
                     .footer-img img{
