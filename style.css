@@ -3,9 +3,13 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-.banner-part{
+/* --------------------------------------banner part----------------------------------------------------------- */
+.container{
+    width: 100%;
     background-color:#2D25A0;
     height: 677px;
+}
+.banner-part{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -42,25 +46,31 @@ body{
     transform: matrix(-1, 0, 0, 1, 0, 0);
     transition: linear .3s;
 }
+
+/* -----------------------------------player part--------------------------------------------------------- */
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
-    padding-top: 70px;
-   align-items: center;
-   padding-left: 96px;
-   padding-right: 60px;
-   margin-bottom: 100px;
+    grid-column-gap: 30px;
+    padding-left: 100px;
+    padding-right: 135px;
+    margin-bottom: 100px;
+    margin-top: 70px;
+  
+
 }
 .player{
     width: 330px;
     height: 474px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     padding: 15px;
-    padding-bottom: 33px;
     background-color: #fff;
     box-shadow: 0 0 40px 0 rgb(0 0 0 / 0.25);
-   
 }
+
 .player img{
 width: 300px;
 height: 256px;
@@ -83,6 +93,88 @@ margin: 0%;
     line-height: 26px;
     font-weight: 300;
 }
+/* ----------------------------------------------blog part---------------------------------------------------- */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    padding: 33px 150px 42px 150px;
+    margin-bottom: 100px;
+}
+.blog{
+    display: flex;
+    padding-right:15px ;
+}
+.blog .thumbnail img{
+    width: 250px;
+    height: 185px;
+    border-radius: .375rem;
+}
+.blog-info{
+    margin-left: 16px;
+    margin-top: -18px;
+}
+.blog-title{
+    font-size: 18px;
+}
+.blog-paragraph{
+    font-size: 14px;
+}
+.blog-author{
+    color: #9f9f9f;
+    font-size: 16px;
+}
+.blog-author a{
+    font-size: 16px;
+    color: #562EFF;
+    text-decoration: none;
+}
+/* ----------------------------------final-match----------------------------------------------------- */
+.final-container{
+
+    padding-bottom: 100px;
+}
+.final-match{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+.final-match img{
+    width: 450px;
+    height: 300px;
+}
+.final-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.section-title{
+    text-align: center;
+    color: #2D25A0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 3px;
+    padding-bottom: 15px;
+}
+.partners{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+  
+    margin-bottom: 70px;
+}
+.partner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partner img{
+    width: 114px;
+    height: 57px;
+}
+/* ------------------------------------------------footer part-------------------------------------------------------------- */
 footer{
 padding-left: 432px;
 padding-right: 432px;
@@ -113,4 +205,53 @@ footer p{
 }
 
 
+
+/*-------------------------------------------------------- media queri----------------------------------- */
+
+@media only screen and (max-width:688px) {
+                .container{
+                width: 100%;
+                height: 100%;
+                }
+                .container-p{
+                        width: 100%;
+                    
+                    }
+                .banner-part, .players, .blogs, .final-match, .partners{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+                }
+                .banner-text h1{
+                    padding-top: 30px;
+                    padding-left: 0;
+                }
+                .banner-button {
+                    margin-left: 0;
+                }
+                .banner-img img{
+                    position: static;
+                    width: 556.01px;
+                padding-top: 50px;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .blog{
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .blog-info{
+                    text-align: center;
+                }
+            
+            footer{
+                text-align: center;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        
+   
+}
 
