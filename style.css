@@ -63,7 +63,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
-    grid-column-gap: 30px;
+   grid-column-gap: 30px;
     padding-left: 100px;
     padding-right: 135px;
     margin-bottom: 100px;
@@ -265,10 +265,10 @@ footer p{
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    
-                  
-            
-                    }
+                     }
+                     .players{
+                         grid-column-gap: 0;
+                     }
                     .blogs{
                         display: flex;
                         flex-direction: column;
@@ -288,9 +288,7 @@ footer p{
                         color: #2D25A0;
                         font-size: 22px;
                     }
-                    /* .final-container{
-                        padding-left: 60px;
-                    } */
+                   
                    
                   
                     .footer-img img{
