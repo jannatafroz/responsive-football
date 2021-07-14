@@ -253,12 +253,19 @@ footer p{
                 .banner-button {
                     margin-left: 0;
                 }
-                .banner-part, .players, .partners {
+                .banner-part{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                
+                }
+               .players, .partners {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-right: 0px;
+                    padding-left: 39px;
             
                     }
                     .blogs{
