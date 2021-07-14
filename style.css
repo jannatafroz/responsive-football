@@ -233,7 +233,7 @@ footer p{
                 }
                 .banner-img img{
                     position: static;
-                    width: 556.01px;
+                    width: 100%;
                 padding-top: 50px;
                     flex-direction: column;
                     align-items: center;
@@ -251,6 +251,9 @@ footer p{
                 padding-left: 0;
                 padding-right: 0;
                 
+            }
+            .footer-img img{
+                width: 100%;
             }
         
    
